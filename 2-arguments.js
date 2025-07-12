@@ -12,4 +12,4 @@ else
 {
 	console.log("Arguments found");
 }
-console.log(args);
+// console.log(args);
