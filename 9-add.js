@@ -1,13 +1,13 @@
 function add(a, b)
 {
-    if (process.argv.length < 3)
+    let num1 = Number(a);
+    let num2 = Number(b);
+    if (isNaN(num1) || isNaN(num2))
     {
-        print("NaN")
+        console.log("NaN")
     }
     else
-        a = process.argv[2];
-        b = process.argv[3];
-
-    let result = a + b;
-    console.log(result);
+        console.log(num1 + num2);
 }
+
+add(process.argv[2], process.argv[3]);
