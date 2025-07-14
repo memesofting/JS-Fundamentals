@@ -4,10 +4,10 @@ function add(a, b)
     let num2 = Number(b);
     if (isNaN(num1) || isNaN(num2))
     {
-        console.log("NaN")
+        return (NaN);
     }
     else
-        console.log(num1 + num2);
+        return (num1 + num2);
 }
 
-add(process.argv[2], process.argv[3]);
+console.log(add(process.argv[2], process.argv[3]));
