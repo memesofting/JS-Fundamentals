@@ -2,7 +2,7 @@ let number = Number(process.argv[2]);
 
 if(!isNaN(number))
 {
-	console.log(`MyNumber: ${number}`);
+	console.log(`My number: ${number}`);
 }
 else
 	console.log("Not a Number");
