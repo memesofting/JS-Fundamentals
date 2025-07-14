@@ -1,6 +1,6 @@
 let arg = Number(process.argv[2]);
 
-if(isNaN(arg))
+if(isNaN(arg) || arg <= 0)
 {
 	console.log("Missing size");
 }
