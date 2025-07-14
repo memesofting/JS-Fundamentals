@@ -1,6 +1,6 @@
 let arg = Number(process.argv[2]);
 
-if(isNaN(arg))
+if(isNaN(arg) || arg < 0 || !Number.isInteger(arg))
 {
 	console.log("Missing number of occurrences");
 }
