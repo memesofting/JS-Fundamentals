@@ -1,14 +1,14 @@
-let arg = Number(process.argv[2]);
+const size = Number(process.argv[2]);
 
-if(isNaN(arg) || arg <= 0 || !Number.isInteger(arg))
+if(isNaN(size))
 {
 	console.log("Missing size");
 }
 else
 {
-    for(let i = 0; i < arg; i++)
+    for(let i = 0; i < size; i++)
     {
-        for(let j = 0; j < arg; j++)
+        for(let j = 0; j < size; j++)
         {
             process.stdout.write('X');
         }

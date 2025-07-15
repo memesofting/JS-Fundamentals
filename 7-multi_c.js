@@ -1,4 +1,4 @@
-const arg = Number(process.argv[2]);
+const x = Number(process.argv[2]);
 
 // if(isNaN(arg) || arg < 0 || !Number.isInteger(arg))
 // {
@@ -12,12 +12,14 @@ const arg = Number(process.argv[2]);
 //     }
 // }
 
-if(isNaN(arg) || arg < 0 || !Number.isInteger(arg))
+if(isNaN(x))
 {
     console.log("Missing number of occurrences");
-    return;
 }
-for(let i = 0; i < arg; i++)
+else
 {
-    console.log("C is fun");
+    for(let i = 0; i < x; i++)
+    {
+        console.log("C is fun");
+    }
 }
