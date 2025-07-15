@@ -1,4 +1,4 @@
-let number = Number(process.argv[2]);
+const number = Number(process.argv[2]);
 
 if(!isNaN(number))
 {
