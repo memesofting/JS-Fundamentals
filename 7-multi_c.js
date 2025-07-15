@@ -18,6 +18,10 @@ if(isNaN(x))
 }
 else
 {
-    const result = Array(x).fill("C is fun").join('\n');
-    console.log(result);
+    let output = '';
+    for(let i = 0; i < x; i++)
+    {
+        output += 'C is fun\n';
+    }
+    console.log(output.trim());
 }
